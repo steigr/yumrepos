@@ -29,7 +29,7 @@ def add_admin_routes(app, backend):
     @admin.route('/ready')
     def is_ready():
         log.info("/ready called (log)")
-        return ('', 204)
+        return ('', 200)
 
     @admin.route('/update')
     @admin.route('/update-all-metadata')
